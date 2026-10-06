@@ -1,7 +1,7 @@
 # Project_Cases
 
 ### Nagłówek (Header)
-- [ ] Logo, kliknięcie przenosi na stronę główną
+- [x] Logo, kliknięcie przenosi na stronę główną
 - [ ] Menu „Cases": strona z listą skrzynek
 - [ ] Menu „Contest": strona z konkursami
 - [ ] Menu „Bonus": codzienny bonus monet
