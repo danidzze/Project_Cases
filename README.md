@@ -1,53 +1,16 @@
-# Project_Cases
+# React + Vite
 
-### Nagłówek (Header)
-- [x] Logo, kliknięcie przenosi na stronę główną
-- [ ] Menu „Cases": strona z listą skrzynek
-- [ ] Menu „Contest": strona z konkursami
-- [ ] Menu „Bonus": codzienny bonus monet
-- [ ] „Balance": wyświetlanie salda monet, aktualizowane po otwarciu skrzynki
-- [ ] „Profile": profil, statystyki, wylogowanie
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-### Panel boczny (Sidebar)
-- [ ] Lista przedmiotów / ostatnich losowań
-- [ ] Kolor ramki przedmiotu zależny od rzadkości
-- [ ] Przewijanie listy
+Currently, two official plugins are available:
 
-### Taśma losowania (Ribbon)
-- [ ] Pozioma taśma z kartami przedmiotów
-- [ ] Pionowa linia-wskaźnik na środku
-- [ ] Animacja przewijania z wyhamowaniem (4-6 sekund)
-- [ ] Zatrzymanie na przedmiocie wybranym przez serwer
-- [ ] Wyświetlenie wylosowanego przedmiotu po zatrzymaniu
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### Przyciski otwierania
-- [ ] Wybór liczby skrzynek: 1X, 2X, 3X, 5X
-- [ ] Przycisk „OPEN"
-- [ ] Sprawdzenie, czy użytkownik ma wystarczająco monet
-- [ ] Blokada przycisków w trakcie animacji
-- [ ] Pobranie ceny z salda użytkownika
+## React Compiler
 
-### Stopka (Footer)
-- [ ] Informacje o projekcie, link do GitHuba
-- [ ] Regulamin i informacja, że monety są wirtualne
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Backend (API + baza danych)
-- [ ] Rejestracja i logowanie
-- [ ] Endpoint otwierania skrzynki (losowanie ważone szansami)
-- [ ] Przechowywanie ekwipunku użytkownika
-- [ ] Historia otwarć
-- [ ] Tabele: users, items, cases, case_items, inventory, history
+## Expanding the Oxlint configuration
 
-## Założenia
-- Monety są wirtualne, prawdziwe pieniądze nie są używane.
-- Wynik losowania określa serwer, a nie frontend.
-- Przy 2X, 3X i 5X otwiera się kilka skrzynek naraz, a cena jest mnożona.
-- Nowy użytkownik dostaje startowe saldo monet.
-- Szanse wypadnięcia przedmiotów są przechowywane w bazie danych.
-- Przedmioty są fikcyjne i nie pochodzą z prawdziwych gier.
-- Użytkownik nie może otworzyć drugiej skrzynki w trakcie animacji.
-
-## Plany na przyszłość
-- [ ] Sprzedaż przedmiotów z ekwipunku
-- [ ] Konkursy (Contest) z nagrodami
-- [ ] Statystyki wypadnięć w profilu
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
